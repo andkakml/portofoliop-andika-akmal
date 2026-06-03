@@ -345,6 +345,8 @@ body{
 .contact-btn{
     display:inline-block;
 
+    font-weight: bold;
+
     background:white;
     color:black;
 
