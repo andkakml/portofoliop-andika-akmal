@@ -96,21 +96,30 @@
 
         <!-- SOCIAL -->
 
-        <div class="social social-1">
+        <a href="https://github.com/andkakml" target="_blank" class="social social-1">
+
             <img src="{{ asset('images/icons/Github.png') }}">
-        </div>
 
-        <div class="social social-2">
+        </a>
+
+        <a href="" target = "_blank"class="social social-2">
+
             <img src="{{ asset('images/icons/facebook.png') }}">
-        </div>
 
-        <div class="social social-3">
+        </a>
+
+
+        <a href="https://www.instagram.com/andkakml/" target = "_blank" class="social social-3">
+
             <img src="{{ asset('images/icons/instagram.png') }}">
-        </div>
 
-        <div class="social social-4">
+        </a>
+
+        <a href="http://" target="_blank" class ="social social-4">
             <img src="{{ asset('images/icons/X.png') }}">
-        </div>
+        </a>
+
+
 
     </div>
 
