@@ -4,10 +4,10 @@
 
         <div class="logo-area">
             <div class="profile-icon">
-                👤
+                <img src="{{ asset('images/heros/logos.png') }}">
             </div>
 
-            <span>Andika Akmal Ramadhan</span>
+            <span>Home of Andika</span>
         </div>
 
         <ul class="menu">

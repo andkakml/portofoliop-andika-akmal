@@ -58,17 +58,24 @@ body{
     width:35px;
     height:35px;
 
-    border:1px solid #000;
-    border-radius:50%;
+    /* border:1px solid #000;
+    border-radius:50%; */
 
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
+.profile-icon img {
+    width : 115px;
+    margin-right: 20px;
+
+
+}
+
 .logo-area span{
-    font-size:14px;
-    font-weight:600;
+    font: size 80px;
+    font-weight:bold;
 }
 
 .menu{
@@ -167,6 +174,7 @@ body{
     height:2px;
     background:white;
     margin:15px auto 40px;
+     border-radius:100px;
 }
 
 .about-desc{
@@ -273,7 +281,7 @@ body{
     position:absolute;
     width:70px;
     right:400px;
-    bottom:30px;
+    bottom:40px;
 }
 
 .person-img{
