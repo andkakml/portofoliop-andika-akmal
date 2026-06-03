@@ -13,9 +13,10 @@
 
         <p class="about-desc">
             I graduated from Marhas Margahayu Vocational School,
-            majoring in Computer Engineering & Informatics.
-            I can work both in teams and individually,
-            and I'm proficient in operating computers
+            majoring in Computer Engineering & Informatics. I am currently pursuing 
+            a Bachelor's degree in Informatics Engineering at Langlangbuana University.
+            I can work well in both teams and individually,
+            and I am proficient in operating computers
             and various software.
         </p>
 
