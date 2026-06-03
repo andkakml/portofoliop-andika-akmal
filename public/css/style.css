@@ -2,7 +2,8 @@ body{
     margin:0;
     padding:0;
     background:#ffffff;
-    font-family:Arial, sans-serif;
+
+    font-family:'Montserrat', sans-serif;
 }
 
 /* WRAPPER */
@@ -128,4 +129,253 @@ body{
 .project-btn:hover{
     background:#222;
     color:#fff;
+}
+
+.about-section{
+    width:100%;
+    padding:80px 0;
+}
+
+.about-container{
+    width:90%;
+    margin:auto;
+    min-height:800px;
+
+    background:#000;
+    border-radius:25px;
+
+    position:relative;
+    overflow:hidden;
+
+    color:white;
+
+    padding:60px;
+}
+
+.about-title{
+    text-align:center;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.about-line{
+    width:80px;
+    height:2px;
+    background:white;
+    margin:15px auto 40px;
+}
+
+.about-desc{
+    max-width:500px;
+    margin:auto;
+    text-align:center;
+    line-height:1.7;
+}
+
+.blur-left{
+    position:absolute;
+    left:0;
+    top:60px;
+    width:400px;
+    opacity: 0.8;;
+}
+
+.blur-right{
+    position:absolute;
+    right:0;
+    top:50px;
+    width:400px;
+    opacity: 0.8;;
+}
+
+.experience-card{
+    /* text-align:right; */
+    position:absolute;
+
+    top:350px;
+    right:50px;
+
+    width:450px;
+    height:130px;
+
+    background:white;
+    color:black;
+
+    border-radius:15px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center; /* tengah vertikal */
+    align-items:flex-end;   /* rata kanan */
+
+    padding:20px;
+    box-sizing:border-box;
+    z-index:1;
+    
+}
+
+.experience-card h4{
+    margin:0;
+    font-size:18px;
+    font-weight:700;
+    text-align:right;
+}
+
+.experience-card p{
+    margin-top:8px;
+    text-align:right;
+    
+}
+
+.hobby-card{
+    position:absolute;
+
+    left:50px;
+    top:420px;
+
+    width:450px;
+    height:130px;
+
+    background:white;
+    color:black;
+
+    border-radius:15px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center; /* tengah vertikal */
+    align-items:flex-start; /* rata kiri */
+
+
+    padding:20px;
+    box-sizing:border-box;
+     z-index:1;
+
+}
+
+.hobby-card h4{
+    margin:0;
+    font-size:18px;
+    font-weight:700;
+    text-align:left;
+}
+
+.hobby-card p{
+    margin-top:8px;
+    text-align:left;
+}
+
+.laptop-icon{
+    position:absolute;
+    width:90px;
+    right:400px;
+    bottom:40px;
+}
+
+.person-img{
+    position:absolute;
+    left:470px;
+    bottom:210px;
+
+    width:100px;
+    z-index:15;
+}
+
+.globe-img{
+    position:absolute;
+
+    right:90px;
+    bottom:70px;
+
+    width:220px;
+}
+
+.social{
+    position:absolute;
+
+    width:40px;
+    height:40px;
+
+    background:white;
+
+    border-radius:10px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.social img{
+    width:49px;
+}
+
+/* Github */
+.social-1{
+    right:300px;
+    bottom:200px;
+}
+
+/* Facebook */
+.social-2{
+    right:290px;
+    bottom:90px;
+}
+
+/* Instagram */
+.social-3{
+    right:190px;
+    bottom:30px;
+}
+
+/* X */
+.social-4{
+    right:90px;
+    bottom:80px;
+}
+.contact-box{
+    position:absolute;
+    left:50px;
+    bottom:70px;
+}
+
+.contact-btn{
+    display:inline-block;
+
+    background:white;
+    color:black;
+
+    text-decoration:none;
+
+    padding:10px 25px;
+
+    border-radius:8px;
+
+    margin-top:15px;
+}
+
+.star-1{
+    position:absolute;
+    left:570px;
+    top:350px;
+    width:100px;
+}
+
+.star-2{
+    position:absolute;
+    left:680px;
+    top:340px;
+    width:100px;
+}
+
+.star-3{
+    position:absolute;
+    left:610px;
+    top:430px;
+    width:100px;
+}
+
+.star-1,
+.star-2,
+.star-3{
+    z-index:10;
 }

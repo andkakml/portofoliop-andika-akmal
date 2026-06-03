@@ -4,5 +4,6 @@
 
 @include('sections.navbar')
 @include('sections.hero')
+@include('sections.about')
 
 @endsection
