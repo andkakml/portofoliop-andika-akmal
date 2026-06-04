@@ -69,6 +69,7 @@ body{
 .profile-icon img {
     width : 115px;
     margin-right: 20px;
+    margin-top: 5px;
 
 
 }
@@ -228,12 +229,14 @@ body{
 
 .experience-card h4{
     margin:0;
+    margin-right: 10px;
     font-size:18px;
     font-weight:700;
     text-align:right;
 }
 
 .experience-card p{
+    margin-right: 10px;
     margin-top:8px;
     text-align:right;
     
@@ -267,6 +270,8 @@ body{
 
 .hobby-card h4{
     margin:0;
+    margin-top: 10px;
+    margin-left: 10px;
     font-size:18px;
     font-weight:700;
     text-align:left;
@@ -274,6 +279,7 @@ body{
 
 .hobby-card p{
     margin-top:8px;
+    margin-left: 10px;
     text-align:left;
 }
 

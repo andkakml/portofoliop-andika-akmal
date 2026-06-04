@@ -119,8 +119,6 @@
             <img src="{{ asset('images/icons/X.png') }}">
         </a>
 
-
-
     </div>
 
 </section>
