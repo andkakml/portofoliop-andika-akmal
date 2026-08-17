@@ -1,80 +1,150 @@
-<section id="about" class="about-section">
-
-  
+<section class="about-section" id="about">
 
     <div class="about-container">
-        <img src="{{ asset('images/about/efek_debu.png') }}" class="blur-left">
-        <img src="{{ asset('images/about/efek_debu_kanan.png') }}" class="blur-right">
-        <h2 class="about-title">
-            ABOUT ME
-        </h2>
 
-        <div class="about-line"></div>
+        <!-- TITLE -->
+        <div class="about-header">
 
-        <p class="about-desc">
-            I graduated from Marhas Margahayu Vocational School,
-            majoring in Computer Engineering & Informatics. I am currently pursuing 
-            a Bachelor's degree in Informatics Engineering at Langlangbuana University.
-            I can work well in both teams and individually,
-            and I am proficient in operating computers
-            and various software.
-        </p>
+            <!-- <span class="about-label">About Me</span> -->
 
-        <!-- EXPERIENCE -->
+            <h2>About Me</h2>
 
-        <div class="experience-card">
+            <div class="about-line"></div>
 
-            <img
-                src="{{ asset('images/about/laptop.png') }}"
-                class="laptop-icon"
-            >
+            <p>
+                I graduated from Marhas Margahayu Vocational School,
+                majoring in Computer Engineering & Informatics.
+                I can work both in teams and individually,
+                and I'm proficient in operating computers and various software.
+            </p>
 
-            <div>
-                <h4>EXPERIENCE</h4>
-                <p>Field Work Practice at SD Telkom Banjaran</p>
+            <div class="tech-stack">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>PHP</span>
+                <span>Laravel</span>
+                <span>MySQL</span>
+                <span>Git</span>
+
             </div>
 
         </div>
 
-        <!-- HOBBY -->
 
+        <!-- HOBBY -->
         <div class="hobby-card">
 
-            <h4>HOBBY</h4>
+            <div class="card-icon">
+                ♪
+            </div>
+
+            <h4>Hobby</h4>
 
             <p>
-                Listening to music and playing
-                musical instruments.
+                Listening to music and playing musical instruments.
             </p>
 
         </div>
 
-        <!-- PERSON -->
+        <!-- EDUCATION -->
 
+        <div class="education">
+
+            <span class="education-label">EDUCATION</span>
+
+            <div class="education-line"></div>
+
+            <div class="education-content">
+
+                <span class="education-year">2025 — PRESENT</span>
+
+                <h4>Universitas Langlangbuana</h4>
+
+                <p>Informatics Engineering</p>
+
+            </div>
+
+        </div>
+
+        <!-- EXPERIENCE -->
+        <div class="experience-card">
+
+            <img src="{{ asset('images/about/MacBook.png') }}" class="card-icon" alt="Laptop">
+
+            <h4>Experience</h4>
+
+            <p>
+                Field Work Practice at SD Telkom Banjaran.
+            </p>
+
+        </div>
+
+
+        <!-- PERSON -->
         <img
             src="{{ asset('images/about/orang.png') }}"
             class="person-img"
+            alt="Andika"
         >
 
-        <!-- STAR -->
+    
 
+
+        <!-- ORBIT -->
+        <div class="orbit"></div>
+
+        <img src="{{ asset('images/about/SOB.png') }}" class="about-star about-star-1">
+        <img src="{{ asset('images/about/SOB.png') }}" class="about-star about-star-2">
+        <img src="{{ asset('images/about/SOB.png') }}" class="about-star about-star-3">
+
+
+        <!-- GLOBE -->
         <img
-            src="{{ asset('images/about/star.png') }}"
-            class="star-1"
+            src="{{ asset('images/about/globe.png') }}"
+            class="globe-img"
+            alt="Globe"
         >
 
-        <img
-            src="{{ asset('images/about/star.png') }}"
-            class="star-2"
-        >
 
-        <img
-            src="{{ asset('images/about/star.png') }}"
-            class="star-3"
-        >
+        <!-- SOCIAL
+        <a href="https://github.com/USERNAME"
+           target="_blank"
+           class="social social-github">
+
+            <img src="{{ asset('images/Github.png') }}" alt="Github">
+
+        </a>
+
+
+        <a href="https://www.facebook.com/USERNAME"
+           target="_blank"
+           class="social social-facebook">
+
+            <img src="{{ asset('images/facebook.png') }}" alt="Facebook">
+
+        </a>
+
+
+        <a href="https://www.instagram.com/USERNAME"
+           target="_blank"
+           class="social social-instagram">
+
+            <img src="{{ asset('images/instagram.png') }}" alt="Instagram">
+
+        </a>
+
+
+        <a href="https://x.com/USERNAME"
+           target="_blank"
+           class="social social-x">
+
+            <img src="{{ asset('images/X.png') }}" alt="X">
+
+        </a> -->
+
 
         <!-- CONTACT -->
-
         <div class="contact-box">
 
             <p>
@@ -82,42 +152,15 @@
             </p>
 
             <a href="#contact" class="contact-btn">
-                Contact
+                Contact Me
+                <span>→</span>
+            </a>
+
+            <a href="#projects" class="hero-btn secondary">
+                    Projects
             </a>
 
         </div>
-
-        <!-- GLOBE -->
-
-        <img
-            src="{{ asset('images/about/globe.png') }}"
-            class="globe-img"
-        >
-
-        <!-- SOCIAL -->
-
-        <a href="https://github.com/andkakml" target="_blank" class="social social-1">
-
-            <img src="{{ asset('images/icons/Github.png') }}">
-
-        </a>
-
-        <a href="" target = "_blank"class="social social-2">
-
-            <img src="{{ asset('images/icons/facebook.png') }}">
-
-        </a>
-
-
-        <a href="https://www.instagram.com/andkakml/" target = "_blank" class="social social-3">
-
-            <img src="{{ asset('images/icons/instagram.png') }}">
-
-        </a>
-
-        <a href="http://" target="_blank" class ="social social-4">
-            <img src="{{ asset('images/icons/X.png') }}">
-        </a>
 
     </div>
 

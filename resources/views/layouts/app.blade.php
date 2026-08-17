@@ -17,5 +17,65 @@
 
     @yield('content')
 
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+    const navbar = document.querySelector(".navbar-custom");
+
+    if (!navbar) return;
+
+    let hideTimer;
+
+    window.addEventListener("scroll", function () {
+
+        const scrollY = window.scrollY;
+
+
+        /* =========================================
+           MASIH DI HERO
+        ========================================= */
+
+        if (scrollY < 500) {
+
+            clearTimeout(hideTimer);
+
+            navbar.classList.remove("navbar-hidden");
+            navbar.classList.remove("navbar-floating");
+
+            return;
+        }
+
+
+        /* =========================================
+           SUDAH MASUK ABOUT / SECTION LAIN
+        ========================================= */
+
+        navbar.classList.add("navbar-floating");
+
+        /* Saat scroll → navbar muncul */
+
+        navbar.classList.remove("navbar-hidden");
+
+
+        /* Reset timer */
+
+        clearTimeout(hideTimer);
+
+
+        /* =========================================
+           BERHENTI 3 DETIK → HILANG
+        ========================================= */
+
+        hideTimer = setTimeout(function () {
+
+            navbar.classList.add("navbar-hidden");
+
+        }, 3000);
+
+    });
+
+});
+</script>
+
 </body>
 </html>

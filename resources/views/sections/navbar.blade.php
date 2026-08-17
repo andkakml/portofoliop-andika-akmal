@@ -3,9 +3,9 @@
     <nav class="navbar-custom">
 
         <div class="logo-area">
-            <div class="profile-icon">
+            <!-- <div class="profile-icon">
                 <img src="{{ asset('images/heros/logos.png') }}">
-            </div>
+            </div> -->
 
             <span>Home of Andika</span>
         </div>
