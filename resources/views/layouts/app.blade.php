@@ -35,7 +35,7 @@
            MASIH DI HERO
         ========================================= */
 
-        if (scrollY < 500) {
+        if (scrollY < 10) {
 
             clearTimeout(hideTimer);
 

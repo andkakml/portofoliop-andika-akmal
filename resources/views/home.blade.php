@@ -5,5 +5,6 @@
 @include('sections.navbar')
 @include('sections.hero')
 @include('sections.about')
+@include('sections.projects')
 
 @endsection

@@ -25,7 +25,7 @@
                 <span>PHP</span>
                 <span>Laravel</span>
                 <span>MySQL</span>
-                <span>Git</span>
+                <span>Figma</span>
 
             </div>
 
