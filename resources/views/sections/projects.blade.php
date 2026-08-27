@@ -27,7 +27,7 @@
             <div class="project-image">
 
                 <img
-                    src="{{ asset('assets/img/project-1.png') }}"
+                    src="{{ asset('images/projects/PhotoProjects1.png') }}"
                     alt="Project 1"
                 >
 
@@ -35,19 +35,17 @@
 
             <div class="project-info">
 
-                <h2>Absensi Teknisi</h2>
+                <h2>GAZZKEUN!</h2>
 
                 <p>
-                    Website absensi teknisi berbasis Laravel
-                    untuk meningkatkan efisiensi pencatatan
-                    kehadiran.
+                    Gazzkeun! is a travel app designed to make 
+                    planning and booking trips easier and more convenient. 
                 </p>
 
                 <div class="project-tags">
 
-                    <span>Laravel</span>
-                    <span>PHP</span>
-                    <span>MySQL</span>
+                    <span>Figma</span>
+                    <span>UI/UX Design</span>
 
                 </div>
 
@@ -63,7 +61,7 @@
             <div class="project-image">
 
                 <img
-                    src="{{ asset('assets/img/project-2.png') }}"
+                    src="{{ asset('images/projects/PhotoProjects2.png') }}"
                     alt="Project 2"
                 >
 
@@ -80,9 +78,8 @@
 
                 <div class="project-tags">
 
-                    <span>Laravel</span>
-                    <span>UI/UX</span>
                     <span>Figma</span>
+                    <span>UI/UX Design</span>
 
                 </div>
 
@@ -98,7 +95,7 @@
             <div class="project-image">
 
                 <img
-                    src="{{ asset('assets/img/project-3.png') }}"
+                    src="{{ asset('images/projects/PhotoProjects3.png') }}"
                     alt="Project 3"
                 >
 
@@ -106,18 +103,16 @@
 
             <div class="project-info">
 
-                <h2>Studio Booking</h2>
+                <h2>Uwang</h2>
 
                 <p>
-                    Aplikasi booking studio musik dengan
-                    sistem pengaturan jadwal dan durasi.
+                    Teman Saya
                 </p>
 
                 <div class="project-tags">
 
-                    <span>Java</span>
-                    <span>OOP</span>
-                    <span>ArrayList</span>
+                    <span>Figma</span>
+                    <span>UI/UX Design</span>
 
                 </div>
 
