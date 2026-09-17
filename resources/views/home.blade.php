@@ -7,5 +7,6 @@
 @include('sections.about')
 @include('sections.projects')
 @include('sections.contact')
+@include('sections.footer')
 
 @endsection

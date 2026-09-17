@@ -2,15 +2,21 @@
 
     <nav class="navbar-custom">
 
-        <div class="logo-area">
-            <!-- <div class="profile-icon">
-                <img src="{{ asset('images/heros/logos.png') }}">
-            </div> -->
+        <!-- Area Kiri: Toggle Hamburger & Brand Name -->
+        <div class="nav-left">
+            <button class="hamburger-toggle" id="hamburgerToggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-            <span>Home of Andika</span>
+            <div class="logo-area">
+                <span>Home of Andika</span>
+            </div>
         </div>
 
-        <ul class="menu">
+        <!-- Menu Navigation -->
+        <ul class="menu" id="navMenu">
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>

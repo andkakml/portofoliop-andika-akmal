@@ -1,0 +1,739 @@
+/* ==============================
+   ABOUT SECTION
+============================== */
+
+.about-section {
+    width: 100%;
+    padding: 80px 0;
+    background: transparent;
+}
+
+.hobby-card, .experience-card {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    backdrop-filter: blur(12px);
+    border-radius: 16px; /* Sudut lebih melengkung halus */
+}
+
+.about-container {
+    position: relative;
+
+    width: 95%;
+    height: 750px;
+
+    margin: 0 auto;
+
+    /* MULTIPLE RANDOM GLOW ORBS */
+    /* background: 
+        radial-gradient(circle at 12% 20%, rgba(255, 255, 255, 0.25) 0%, transparent 28%),
+        radial-gradient(circle at 85% 15%, rgba(255, 255, 255, 0.22) 0%, transparent 22%),
+        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.30) 0%, transparent 35%),
+        radial-gradient(circle at 25% 80%, rgba(255, 255, 255, 0.18) 0%, transparent 25%),
+        radial-gradient(circle at 80% 85%, rgba(255, 255, 255, 0.20) 0%, transparent 20%),
+        #000; */
+
+    color: #fff;
+
+    border-radius: 25px;
+
+    overflow: visible !important;
+}
+
+
+/* ==============================
+   ABOUT HEADER
+============================== */
+
+.about-header {
+    position: absolute;
+
+    left: 70px;
+    top: 60px;
+
+    width: 500px;
+
+    z-index: 10;
+}
+
+.about-label {
+    display: inline-block;
+
+    padding: 7px 14px;
+
+    background: #151515;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    color: #fff;
+}
+
+.about-header h2 {
+    margin: 12px 0 8px;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    color: #fff;
+}
+
+.about-line {
+    width: 135px;
+    height: 3px;
+
+    margin: 0 0 18px;
+
+    background: #fff;
+
+    border-radius: 10px;
+}
+
+.about-header p {
+    width: 480px;
+
+    margin: 0;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #ddd;
+}
+
+/* ==============================
+   TECH STACK
+============================== */
+
+.tech-stack {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+    
+
+    width: 480px;
+}
+
+.tech-stack span {
+    padding: 6px 11px;
+
+    border: 1px solid #2a2a2a;
+
+    border-radius: 20px;
+
+    background: #0b0b0b;
+
+    color: #aaa;
+
+    font-size: 9px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.5px;
+
+    transition: 0.25s;
+}
+
+.tech-stack span:hover {
+    border-color: #fff;
+
+    color: #fff;
+}
+
+/* =========================================
+   HOBBY GLASS CARD
+========================================= */
+
+.hobby-card {
+    position: absolute;
+
+    left: 60px;
+    top: 325px;
+
+    width: 400px;
+    height: 190px;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    /* Glass */
+    background: rgba(25, 25, 25, 0.55);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    /* Border */
+    border: 1px solid rgba(255, 255, 255, 0.22);
+
+    border-radius: 18px;
+
+    /* Soft shadow */
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.08),
+        0 15px 40px rgba(0, 0, 0, 0.25);
+
+    color: #fff;
+
+    z-index: 4;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+
+/* Glow tipis di dalam card */
+
+.hobby-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: -80px;
+    left: -80px;
+
+    width: 180px;
+    height: 180px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    filter: blur(50px);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* Icon */
+
+.hobby-card .card-icon {
+    position: relative;
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
+
+    color: #fff;
+
+    z-index: 2;
+}
+
+
+/* Title */
+
+.hobby-card h4 {
+    position: relative;
+
+    margin: 0 0 10px;
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+    color: #fff;
+
+    z-index: 2;
+}
+
+
+/* Description */
+
+.hobby-card p {
+    position: relative;
+
+    width: 270px;
+
+    margin: 0;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #aaa;
+
+    z-index: 2;
+}
+
+
+/* Hover */
+
+.hobby-card:hover {
+    transform: translateY(-4px);
+
+    background: rgba(35, 35, 35, 0.65);
+
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+/* ==============================
+   EDUCATION
+============================== */
+
+.education {
+    position: absolute;
+
+    right: 70px;
+    top: 100px;
+
+    width: 400px;
+
+    z-index: 5;
+}
+
+
+/* LABEL */
+
+.education-label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: #ffffff;
+}
+
+
+/* GARIS */
+
+.education-line {
+    width: 100%;
+    height: 3px;
+
+    margin-bottom: 18px;
+
+    background: #292929;
+}
+
+
+/* CONTENT */
+
+.education-content {
+    position: relative;
+
+    padding-left: 18px;
+
+    border-left: 1px solid #444;
+}
+
+
+/* YEAR */
+
+.education-year {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 15px;
+
+    letter-spacing: 1px;
+
+    color: #777;
+}
+
+
+/* UNIVERSITY */
+
+.education-content h4 {
+    margin: 0 0 5px;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    color: #fff;
+}
+
+
+/* MAJOR */
+
+.education-content p {
+    margin: 0;
+
+    font-size: 15px;
+
+    color: #aaa;
+}
+
+/* =========================================
+   EXPERIENCE GLASS CARD
+========================================= */
+
+.experience-card {
+    position: absolute;
+
+    right: 60px;
+    top: 325px;
+
+    width: 400px;
+    height: 190px;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    /* Glass */
+    background: rgba(25, 25, 25, 0.55);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    /* Border */
+    border: 1px solid rgba(255, 255, 255, 0.22);
+
+    border-radius: 18px;
+
+    /* Shadow */
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.08),
+        0 15px 40px rgba(0, 0, 0, 0.25);
+
+    color: #fff;
+
+    z-index: 4;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+
+/* Glow */
+
+.experience-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: -80px;
+    right: -80px;
+
+    width: 180px;
+    height: 180px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    filter: blur(50px);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.experience-card .card-icon {
+    width: 28px;
+    height: auto;
+
+    margin-bottom: 15px;
+
+    object-fit: contain;
+}
+
+
+/* Title */
+
+.experience-card h4 {
+    position: relative;
+
+    margin: 0 0 10px;
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+    color: #fff;
+
+    z-index: 2;
+}
+
+
+/* Description */
+
+.experience-card p {
+    position: relative;
+
+    width: 270px;
+
+    margin: 0;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #aaa;
+
+    z-index: 2;
+}
+
+
+/* Hover */
+
+.experience-card:hover {
+    transform: translateY(-4px);
+
+    background: rgba(35, 35, 35, 0.65);
+
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+
+/* ==============================
+   PERSON
+============================== */
+
+.person-img {
+    position: absolute;
+
+    left: 50%;
+    bottom: 105px;
+
+    transform: translateX(-50%);
+
+    width: 200px;
+
+    z-index: 8;
+}
+
+
+/* ==============================
+   ORBIT
+============================== */
+
+.orbit {
+    position: absolute;
+
+    left: 50%;
+    bottom: 165px;
+
+    transform: translateX(-50%);
+
+    width: 260px;
+    height: 48px;
+
+    border: 1px solid rgba(255, 255, 255, 0.30);
+
+    border-radius: 50%;
+
+    z-index: 4;
+}
+
+.orbit::before {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 190px;
+    height: 30px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 50%;
+}
+
+/* ==============================
+   ABOUT SPARKLES
+============================== */
+
+.about-star {
+    position: absolute;
+
+    width: 28px;
+
+    opacity: 0.7;
+
+    z-index: 2;
+}
+
+
+/* Sparkle kiri tengah */
+
+.about-star-1 {
+    left: 43%;
+    top: 390px;
+}
+
+
+/* Sparkle kanan atas */
+
+.about-star-2 {
+    right: 42%;
+    top: 270px;
+
+    width: 22px;
+}
+
+
+/* Sparkle bawah person */
+
+.about-star-3 {
+    left: 47%;
+    bottom: 155px;
+
+    width: 18px;
+}
+
+/* ==============================
+   GLOBE
+============================== */
+
+.globe-img {
+    position: absolute;
+
+    right: 150px;
+    bottom: -10px;
+
+    width: 220px;
+
+    z-index: 3;
+    border-radius: 1000px;
+    
+}
+
+
+/* ==============================
+   CONTACT
+============================== */
+
+.contact-box {
+    position: absolute;
+
+    left: 70px;
+    bottom: 100px;
+
+    z-index: 10;
+}
+
+.contact-box p {
+    margin: 0 0 18px;
+
+    font-size: 18px;
+
+
+    color: #ddd;
+}
+
+.contact-btn {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 10px;
+
+    padding: 11px 18px;
+
+    margin-right: 10px;
+
+    background: #000;
+    color: #fff;
+
+    border: 1px solid #fff;
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: 0.25s;
+}
+
+.contact-btn:hover {
+    background: #f700ff;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.contact-btn span {
+    font-size: 14px;
+}
+
+/* =========================================
+   AUTO RESPONSIVE (ABOUT SECTION)
+========================================= */
+
+@media (max-width: 1200px) {
+    .about-header { left: 40px; width: 420px; }
+    .about-header p, .tech-stack { width: 100%; }
+    .education { right: 40px; width: 340px; }
+    .hobby-card { left: 40px; width: 340px; }
+    .experience-card { right: 40px; width: 340px; }
+    .globe-img { right: 40px; }
+}
+
+@media (max-width: 992px) {
+    .about-container {
+        height: auto;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        align-items: center;
+    }
+
+    .about-header,
+    .education,
+    .hobby-card,
+    .experience-card,
+    .contact-box {
+        position: relative;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+        width: 100%;
+        max-width: 550px;
+    }
+
+    .hobby-card, .experience-card {
+        height: auto;
+    }
+
+    .hobby-card p, .experience-card p {
+        width: 100%;
+    }
+
+    .person-img, .orbit, .globe-img, .about-star {
+        display: none; /* Menyembunyikan dekorasi absolut di tablet & HP agar tidak tumpang tindih */
+    }
+
+    .contact-box {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-header h2 {
+        font-size: 32px;
+    }
+
+    .about-header p {
+        font-size: 14px;
+    }
+
+    .contact-btn {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}

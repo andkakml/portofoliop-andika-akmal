@@ -5,6 +5,8 @@
     <div class="project-glow project-glow-1"></div>
     <div class="project-glow project-glow-2"></div>
     <div class="project-glow project-glow-3"></div>
+    <div class="project-glow project-glow-4"></div>
+    <div class="project-glow project-glow-5"></div>
 
 
     <!-- PROJECT HEADER -->

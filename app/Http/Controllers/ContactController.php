@@ -22,6 +22,7 @@ class ContactController extends Controller
         // UBAH EMAIL TUJUAN DI SINI ⬇️
         Mail::to('andikaakmal2709@gmail.com')->send(new \App\Mail\ContactMail($validated));
 
-        return redirect()->back()->with('success', 'Pesan Anda berhasil dikirim!');
+        return redirect()->to(url()->previous() . '#contact')
+                 ->with('success', 'Pesan Anda berhasil dikirim!');
     }
 }

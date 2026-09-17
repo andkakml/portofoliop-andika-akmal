@@ -1,0 +1,428 @@
+.hero-section, #hero {
+    position: relative;
+}
+
+.hero-section::after, #hero::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.12) 0%, rgba(0, 0, 0, 0) 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+
+/* =========================
+   HERO WRAPPER
+========================= */
+
+.hero-wrapper{
+    width:100%;
+    margin:20px auto;
+    min-height:700px;
+
+    position:relative;
+    overflow:hidden;
+
+  background: transparent;
+
+    border-radius:30px;
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero-section {
+    position: relative;
+    min-height: 700px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    border-radius: 30px;
+    
+    background:
+        radial-gradient(
+            circle at 15% 35%,
+            rgba(255,255,255,0.045),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 82% 25%,
+            rgba(255,255,255,0.055),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 75% 80%,
+            rgba(255,255,255,0.035),
+            transparent 25%
+        ),
+        #000;
+}
+
+.hero-section::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    left: 100px;
+    top: 80px;
+
+    background: rgba(255,255,255,0.10);
+
+    border: 1px solid rgba(255,255,255,0.06);
+
+    border-radius: 50%;
+
+    filter: blur(40px);
+
+    box-shadow:
+        0 0 100px rgba(255,255,255,0.04);
+
+    pointer-events: none;
+}
+
+.hero-section::after {
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    right: 150px;
+    bottom: 100px;
+
+    background: rgba(255,255,255,0.08);
+
+    border: 1px solid rgba(255,255,255,0.05);
+
+    border-radius: 50%;
+
+    filter: blur(45px);
+
+    box-shadow:
+        0 0 100px rgba(255,255,255,0.035);
+
+    pointer-events: none;
+}
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.hero-content {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+
+    padding: 50px 60px;
+
+    box-sizing: border-box;
+
+    transform:translate(70px, -60px);
+}
+
+
+/* =========================================
+   HERO TEXT
+========================================= */
+
+.hero-text {
+    width: 40%;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.hero-greeting {
+    margin: 0 0 12px 0;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    color: #ffffff;
+}
+
+.hero-text h1 {
+    margin: 0;
+
+    font-size: 64px;
+    font-weight: 800;
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+
+    color: #ffffff;
+
+    
+}
+
+.hero-text h2 {
+    margin: 18px 0 20px 0;
+
+    font-size: 25px;
+    font-weight: 500;
+
+    color: #ffffff;
+}
+
+.hero-description {
+    width: 430px;
+    max-width: 100%;
+
+    margin: 0 0 30px 0;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   HERO BUTTONS
+========================================= */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 15px;
+}
+
+.hero-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 120px;
+
+    padding: 12px 25px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+
+    box-sizing: border-box;
+}
+
+.hero-btn.primary {
+    background: #000;
+
+    color: #fff;
+
+    border: 1px solid #ffffff;
+}
+
+.hero-btn.primary:hover {
+    background: #f700ff;
+
+    transform: translateY(-2px);
+}
+
+.hero-btn.secondary {
+    background: #fff;
+
+    color: #000;
+
+    border: 1px solid #000;
+}
+
+.hero-btn.secondary:hover {
+    background: #f1f1f1;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   HERO ARTWORK
+========================================= */
+
+.hero-art {
+    width: 55%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    z-index: 1;
+
+    transform: translateY(-5px);
+}
+
+.hero-art img {
+    width: 100%;
+
+    max-width: 600px;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+/* =========================================================
+   HERO SOCIAL MEDIA ICONS STYLE (ONLINE FONT AWESOME)
+   ========================================================= */
+
+/* Wadah luar untuk baris link sosial */
+.hero-social-links {
+    z-index: 10;
+}
+
+/* Gaya kotak untuk setiap ikon (Box) */
+.social-icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.479);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* Ukuran & Warna Ikon Font Awesome (Menggantikan img lokal) */
+.social-icon {
+    font-size: 1.2rem;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+/* Efek Hover (Saat kursor diarahkan) */
+.social-icon-box:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #f700ff;;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.2);
+}
+
+.social-icon-box:hover .social-icon {
+    color: #f700ff;
+    transform: scale(1.15);
+}
+
+
+/* =========================================================
+   AUTO RESPONSIVE (HERO SECTION)
+   ========================================================= */
+
+@media (max-width: 1200px) {
+    .hero-content {
+        transform: translate(0, 0);
+        padding: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-wrapper, .hero-section {
+        min-height: auto;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse; /* Mengubah posisi gambar (.hero-art) ke atas dan teks ke bawah */
+        text-align: center;
+        gap: 35px;
+        padding: 40px 20px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-art {
+        width: 100%;
+        transform: none;
+        margin-top: 20px; /* Memberikan sedikit jarak dari navbar */
+    }
+
+    .hero-art img {
+        max-width: 320px; /* Ukuran gambar disesuaikan agar pas di layar HP */
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-social-links .d-flex {
+        justify-content: center !important;
+    }
+
+    .social-icon-box {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-icon {
+        font-size: 1rem;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .hero-text h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-btn {
+        width: 100%;
+    }
+}

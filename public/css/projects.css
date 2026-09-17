@@ -1,0 +1,1070 @@
+/* =========================================
+   PROJECT BUTTON
+   (untuk tombol lama jika masih digunakan)
+========================================= */
+
+.project-btn {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    background: #000;
+    color: #fff;
+
+    text-decoration: none;
+
+    padding: 12px 35px;
+
+    border-radius: 6px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.project-btn:hover {
+    background: #222;
+    color: #fff;
+}
+
+
+
+
+/* =========================================
+   PROJECT CONTENT POSITION
+========================================= */
+
+/* =========================================
+   PROJECT CONTENT POSITION
+========================================= */
+
+.projects-header,
+.projects-grid {
+    position: relative;
+    top: 50px;
+}
+
+/* =========================================
+   PROJECTS SECTION
+========================================= */
+
+/* ==========================================
+   1. MAIN CONTAINER & BACKGROUND GLOW
+   ========================================== */
+.projects-section {
+    margin-top: 150px;
+    /* border-radius: 15%; */
+    position: relative;
+    width: 100%;
+    min-height: 10000px;
+    padding: 100px 60px 120px;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #fff;
+    overflow: visible !important;
+
+}
+
+/* Lingkaran Pendaran Cahaya (Background Glow Orbs) */
+.project-glow {
+    position: absolute;
+    border-radius: 100%;
+    filter: blur(100px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.project-glow-1 {
+    width: 600px;
+    height: 600px;
+
+    position: absolute !important;
+
+    top: -150px !important;
+    left: -150px !important;
+
+    background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.25) 0%,
+        rgba(255, 255, 255, 0) 70%
+    );
+
+    filter: blur(100px);
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+.project-glow-2 {
+    width: 550px;
+    height: 550px;
+
+    position: absolute !important;
+
+    top:550px !important;
+    right: -150px !important;
+
+    bottom: auto !important;
+
+    background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.25) 0%,
+        rgba(255, 255, 255, 0) 70%
+    );
+
+    filter: blur(100px);
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+.project-glow-3 {
+    width: 450px;
+    height: 450px;
+    top: 45%;
+    left: 30%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+/* ==========================================
+   2. HEADER (TITLE & SUBTITLE)
+   ========================================== */
+.projects-header {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.projects-header h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+.projects-header p {
+    font-size: 1.1rem;
+    color: #000000;
+    margin: 0;
+}
+
+/* ==========================================
+   3. GRID LAYOUT
+   ========================================== */
+.projects-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ==========================================
+   4. GLASSMORPHISM PROJECT CARDS (ROUNDED)
+   ========================================== */
+.project-card {
+    position: relative;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.25);
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        border-color 0.35s ease;
+}
+/* Efek Hover Pada Kartu */
+.project-card:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6),
+                0 0 20px rgba(255, 255, 255, 0.08);
+}
+
+/* Kontainer Gambar di Dalam Kartu */
+.project-image {
+    width: 200%;
+    height: 300px;
+
+    overflow: hidden;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image img {
+    width: 150% !important;
+    height: auto !important;
+
+    max-width: none !important;
+    max-height: none !important;
+  
+    object-fit: contain !important;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05); /* Zoom halus pada gambar saat hovered */
+}
+
+/* Detail Teks Proyek */
+.project-info {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.project-info h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 12px 0;
+}
+
+.project-info p {
+    font-size: 0.95rem;
+    color: #a1a1aa;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    flex-grow: 1;
+}
+
+/* Tag Teknologi (Badge Glass) */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-tags span {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #e4e4e7;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 4px 12px;
+    border-radius: 20px; /* Tag kapsul membulat */
+    backdrop-filter: blur(4px);
+}
+
+
+
+/* =========================================
+   PROJECT HEADER
+========================================= */
+
+.projects-header {
+
+    position: relative;
+
+    text-align: center;
+
+    z-index: 5;
+
+    margin-bottom: 55px;
+}
+
+
+.projects-header h1 {
+
+    margin: 0;
+
+    font-size: 48px;
+
+    font-weight: 700;
+
+    letter-spacing: -1px;
+
+    color: #fff;
+}
+
+
+.projects-header p {
+
+    margin: 10px 0 0;
+
+    font-size: 17px;
+
+    color: #aaa;
+
+    font-weight: 400;
+}
+
+/* =========================================
+   PROJECT GRID
+========================================= */
+
+.projects-grid {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 24px;
+
+    align-items: stretch;
+}
+
+/* =========================================
+   PROJECT CARD
+========================================= */
+
+.project-card {
+
+    position: relative;
+
+    min-width: 0;
+
+    background: rgba(20, 20, 20, 0.65);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.20);
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        background 0.35s ease;
+
+}
+
+
+/* Hover */
+
+.project-card:hover {
+
+    transform: translateY(-8px);
+
+    background: rgba(30, 30, 30, 0.75);
+
+    border-color: rgba(255, 255, 255, 0.40);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.45),
+        inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+/* =========================================
+   PROJECT IMAGE
+========================================= */
+
+.project-image {
+    width: 100% !important;
+
+    height: 330px !important;
+
+    overflow: hidden !important;
+
+    background: #111;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* FOTO */
+.project-image img {
+    width: auto !important;
+
+    height: 50% !important;
+
+    max-width: none !important;
+    max-height: none !important;
+
+    object-fit: contain !important;
+
+    transition: transform 0.35s ease;
+}
+
+/* Zoom ketika hover */
+
+.project-card:hover .project-image img {
+
+    transform: scale(1.04);
+}
+
+/* =========================================
+   PROJECT INFO
+========================================= */
+
+.project-info {
+
+    padding: 22px 20px 24px;
+}
+
+
+.project-info h2 {
+
+    margin: 0 0 8px;
+
+    font-size: 21px;
+
+    font-weight: 600;
+
+    color: #fff;
+}
+
+
+.project-info p {
+
+    margin: 0;
+
+    min-height: 48px;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    color: #aaa;
+}
+
+/* =========================================
+   PROJECT TAGS
+========================================= */
+
+.project-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-top: 16px;
+}
+
+
+.project-tags span {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    color: #aaa;
+
+    font-size: 10px;
+
+    white-space: nowrap;
+}/* =========================================
+   PROJECT CONTENT POSITION
+========================================= */
+
+.projects-header,
+.projects-grid {
+    position: relative;
+    top: 50px;
+}
+
+
+/* =========================================
+   PROJECTS SECTION
+========================================= */
+
+.projects-section {
+    margin-top: 100px;
+
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 100px 60px 120px;
+
+    box-sizing: border-box;
+
+    background-color: #000;
+
+    color: #fff;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   PROJECT BACKGROUND GLOW
+========================================= */
+
+.project-glow {
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    filter: blur(100px);
+
+    z-index: 0;
+}
+
+
+/* GLOW KIRI ATAS */
+
+.project-glow-1 {
+
+    width: 350px;
+    height: 350px;
+
+    left: -120px;
+    top: -100px;
+
+    background: #fff;
+
+    opacity: 0.20;
+}
+
+
+/* GLOW KANAN ATAS */
+
+.project-glow-2 {
+
+    width: 420px;
+    height: 420px;
+
+    right: -100px;
+    top: -120px;
+
+    background: #fff;
+
+    opacity: 0.16;
+}
+
+
+/* GLOW TENGAH BAWAH */
+
+.project-glow-3 {
+
+    width: 300px;
+    height: 300px;
+
+    left: 45%;
+    bottom: -180px;
+
+    background: #fff;
+
+    opacity: 0.10;
+}
+
+
+/* =========================================
+   PROJECT HEADER
+========================================= */
+
+.projects-header {
+
+    position: relative;
+
+    z-index: 5;
+
+    text-align: center;
+
+    margin-bottom: 55px;
+}
+
+
+.projects-header h1 {
+
+    margin: 0;
+
+    font-size: 48px;
+
+    font-weight: 700;
+
+    letter-spacing: -1px;
+
+    color: #fff;
+}
+
+
+.projects-header p {
+
+    margin: 10px 0 0;
+
+    font-size: 17px;
+
+    color: #aaa;
+
+    font-weight: 400;
+}
+
+
+/* =========================================
+   PROJECT GRID
+========================================= */
+
+.projects-grid {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 24px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================
+   PROJECT CARD
+========================================= */
+
+.project-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.20);
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+
+/* =========================================
+   CARD HOVER
+========================================= */
+
+.project-card:hover {
+
+    transform: translateY(-8px);
+
+    background: rgba(255, 255, 255, 0.10);
+
+    border-color: rgba(255, 255, 255, 0.40);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.45),
+        inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+
+/* =========================================
+   PROJECT IMAGE
+========================================= */
+
+.project-image {
+
+    width: 100%;
+
+    height: 330px;
+
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.project-image img {
+
+    width: auto !important;
+
+    height: 500% !important;
+
+    max-width: none !important;
+
+    max-height: none !important;
+
+    object-fit: contain !important;
+
+    transition: transform 0.35s ease;
+}
+
+
+/* IMAGE HOVER */
+
+.project-card:hover .project-image img {
+
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   PROJECT INFO
+========================================= */
+
+.project-info {
+    padding: 22px 20px 24px;
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.project-info h2 {
+
+    margin: 0 0 8px;
+
+    font-size: 21px;
+
+    font-weight: 600;
+
+    color: #fff;
+}
+
+
+.project-info p {
+
+    margin: 0;
+
+    min-height: 48px;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    color: #dadada;
+}
+
+
+/* =========================================
+   PROJECT TAGS
+========================================= */
+
+.project-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-top: 16px;
+}
+
+
+.project-tags span {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    color: #aaa;
+
+    font-size: 10px;
+
+    white-space: nowrap;
+
+    backdrop-filter: blur(4px);
+}
+
+/* =========================================
+   PROJECTS RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .projects-section {
+
+        padding: 100px 30px 80px;
+    }
+
+
+    .projects-header h1 {
+
+        font-size: 38px;
+    }
+
+
+    .projects-header p {
+
+        font-size: 14px;
+    }
+
+
+    .projects-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        max-width: 700px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .projects-section {
+
+        padding: 90px 20px 70px;
+    }
+
+
+    .projects-header {
+
+        margin-bottom: 35px;
+    }
+
+
+    .projects-header h1 {
+
+        font-size: 30px;
+    }
+
+
+    .projects-header p {
+
+        font-size: 12px;
+    }
+
+
+    .projects-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .project-image {
+
+        height: 280px;
+    }
+
+
+    .project-info h2 {
+
+        font-size: 19px;
+    }
+
+
+    .project-info p {
+
+        font-size: 11px;
+    }
+
+}
+
+/* =========================================
+   PROJECT CARD - MORE TRANSPARENT GLASS
+========================================= */
+
+.project-card {
+    background: rgba(255, 255, 255, 0.08) !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.35) !important;
+
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+
+    box-shadow:
+        0 10px 40px rgba(255, 255, 255, 0.05) !important;
+}
+
+
+/* =========================================
+   IMAGE AREA
+========================================= */
+
+.project-image {
+    background: rgba(255, 255, 255, 0.001) !important;
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+
+/* =========================================
+   INFO AREA
+========================================= */
+
+.project-info {
+    background: rgba(255, 255, 255, 0.04) !important;
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.project-info h2,
+.project-info p,
+.project-tags {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* =========================================
+   FINAL PROJECT IMAGE SIZE
+========================================= */
+
+.project-image {
+    width: 100% !important;
+    height: 330px !important;
+
+    overflow: hidden !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    background: #111;
+}
+
+.project-image img {
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+    max-height: none !important;
+
+    object-fit: contain !important;
+
+    transform: scale(1.75) !important;
+
+    transition: transform 0.35s ease;
+}
+
+/* =========================================
+   CIRCLE ELEMENT DI BELAKANG PROJECT CARDS
+========================================= */
+
+.projects-grid {
+    position: relative;
+    z-index: 1;
+}
+
+/* Lingkaran di tengah belakang semua card */
+/* .projects-grid::before {
+    content: "";
+
+    position: absolute;
+
+    width: 700px;
+    height: 700px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-image: url("/images/projects/circleelement.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    z-index: -1;
+
+    pointer-events: none;
+} */
+
+/* =========================================
+   ELEMENT TENGAH DI BELAKANG PROJECT CARD
+========================================= */
+
+.projects-section::before {
+    content: "";
+    position: absolute;
+
+    width: 800px;
+    height: 800px;
+
+    left: 50%;
+    top: 55%;
+    
+
+    transform: translate(-50%, -50%);
+
+    background: url("/images/projects/circleelement.png") center / contain no-repeat;
+
+     opacity: 0.5; /* ATUR DI SINI */
+
+    z-index: 0;
+
+    pointer-events: none;
+}
+
+/* =========================================
+   KHUSUS TAMPILAN HP (MAX-WIDTH: 600px)
+   ========================================= */
+@media (max-width: 600px) {
+    /* Menghilangkan margin cokelat (100px) dan pangkas padding hijau (90px) */
+    section#projects.projects-section {
+        margin-top: 0px !important;
+        padding-top: 20px !important;
+    }
+
+    /* Menghilangkan offset jarak tambahan pada judul header proyek */
+    .projects-header {
+        top: 0px !important;
+        margin-top: 0px !important;
+    }
+}

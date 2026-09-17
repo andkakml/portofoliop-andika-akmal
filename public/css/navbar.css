@@ -1,0 +1,221 @@
+/* =========================================
+   NAVBAR BASE
+========================================= */
+
+.navbar-custom {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 35px;
+    background: transparent;
+    box-sizing: border-box;
+
+    transition:
+        transform 0.8s ease,
+        opacity 0.35s ease,
+        background 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+/* =========================================
+   NAVBAR FLOATING
+========================================= */
+
+.navbar-custom.navbar-floating {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    width: calc(100% - 28px);
+    margin: 0;
+    transform: translateX(-50%);
+    z-index: 9999;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   NAVBAR HIDDEN
+========================================= */
+
+.navbar-custom.navbar-hidden {
+    transform: translate(-50%, -130%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* =========================================
+   LOGO & HAMBURGER WRAPPER
+========================================= */
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile-icon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-icon img {
+    width: 115px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.logo-area span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* =========================================
+   HAMBURGER BUTTON
+========================================= */
+
+.hamburger-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10001;
+}
+
+.hamburger-toggle span {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* =========================================
+   DESKTOP MENU
+========================================= */
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.menu a:hover {
+    color: #f700ff;
+}
+
+/* =========================================
+   RESPONSIVE (TABLET & LAPTOP KECIL)
+========================================= */
+
+@media (max-width: 992px) {
+    .navbar-custom {
+        padding: 15px 25px;
+    }
+    
+    .menu {
+        gap: 25px;
+    }
+    
+    .menu a {
+        font-size: 16px;
+    }
+}
+
+/* =========================================
+   RESPONSIVE MOBILE (HP)
+========================================= */
+
+@media (max-width: 768px) {
+    .hamburger-toggle {
+        display: flex !important;
+    }
+
+    .navbar-custom {
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        position: relative;
+    }
+
+    .navbar-custom.navbar-floating {
+        width: calc(100% - 20px);
+    }
+
+    /* DROPDOWN MENU - DARK GLASSMATCHING */
+    .menu {
+        display: none;
+        position: fixed !important;
+        top: 65px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% - 28px);
+        height: auto;
+        
+        /* Menggunakan Hitam 80% + Blur Kuat agar Teks Terbaca & Latar Belakang Buram */
+        background: rgba(10, 10, 10, 0.89) !important;
+        backdrop-filter: blur(25px) saturate(180%) !important;
+        -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
+        
+        /* Border Kaca Putih Tipis Persis Seperti Navbar */
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        border-radius: 12px !important;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+        
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 0;
+        gap: 20px;
+        z-index: 99999 !important;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .menu.active {
+        display: flex !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-area span {
+        font-size: 16px;
+    }
+
+    .profile-icon img {
+        width: 90px;
+    }
+}
